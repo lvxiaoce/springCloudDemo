@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ComputeClient {
 
     @RequestMapping(method = RequestMethod.POST, value = "/add")
-//    Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b,@RequestBody JSONObject jsonObject);
+//    Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value =
+// "b") Integer b,@RequestBody JSONObject jsonObject);
     Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b,@RequestBody UserBean userBean);
 }
